@@ -15,14 +15,6 @@ export default function Header() {
       <noscript>
         <style>{`.nojs-show { opacity: 1; top: 0; }`}</style>
       </noscript>
-      {/* <div>
-        <Image
-          src="/images/world-app.png"
-          alt="Worldcoin Logo"
-          width={675}
-          height={393}
-        />
-      </div> */}
       <div>
         {session?.user ? (
           <Image
@@ -92,7 +84,7 @@ export default function Header() {
         </p>
       </div>
       <nav>
-        {/* <ul className={styles.navItems}>
+        <ul className={styles.navItems}>
           <li className={styles.navItem}>
             <Link href="/">Home</Link>
           </li>
@@ -114,7 +106,7 @@ export default function Header() {
           <li className={styles.navItem}>
             <Link href="/me">Me</Link>
           </li>
-        </ul> */}
+        </ul>
       </nav>
     </header>
   );
