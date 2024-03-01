@@ -15,13 +15,30 @@ export default function Header() {
       <noscript>
         <style>{`.nojs-show { opacity: 1; top: 0; }`}</style>
       </noscript>
-      <div>
+      {/* <div>
         <Image
           src="/images/world-app.png"
           alt="Worldcoin Logo"
           width={675}
           height={393}
         />
+      </div> */}
+      <div>
+        {session?.user ? (
+          <Image
+            src="/images/user-logged-in.png" // Path to the image shown when logged in
+            alt="User Profile"
+            width={675} // Adjust the width as needed
+            height={393} // Adjust the height as needed to maintain the aspect ratio
+          />
+        ) : (
+          <Image
+            src="/images/world-app.png" // Path to the default image
+            alt="Worldcoin Logo"
+            width={675}
+            height={393}
+          />
+        )}
       </div>
       <div className={styles.signedInStatus}>
         <p
