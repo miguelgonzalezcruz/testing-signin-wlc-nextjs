@@ -1,5 +1,6 @@
 /* Set min-height to avoid page reflow while session loading */
 .signedInStatus {
+  margin-top: 20px;
   display: block;
   min-height: 4rem;
   width: 100%;
